@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Physics Universe — آزمایشگاه فیزیک سه‌بعدی</title>
+</head>
+<body data-lv="1">
+<h1>⚛️ آزمایشگاه فیزیک سه‌بعدی <span class="note">— هسته اولیه</span></h1>
+<nav id="tabs"></nav>
+<main>
+<div>
+ <div id="vw"><canvas id="c"></canvas><div id="zm"><button id="zo" aria-label="دور">−</button><button id="zi" aria-label="نزدیک">+</button></div></div>
+ <p class="note">با کشیدن انگشت/ماوس صحنه را بچرخان.</p>
+</div>
+<div>
+ <div class="pn">
+  <h2 id="ttl"></h2><p id="sm" class="note" style="margin:0"></p>
+  <div id="ctl"></div>
+  <div class="bt" id="acts"></div>
+  <div class="bt">
+   <button id="pp">⏸ توقف</button><button id="st">⏭ گام</button><button id="rs">🔄 بازنشانی</button>
+   <select id="sp"><option value=".2">کُند ×۰٫۲</option><option value="1" selected>عادی ×۱</option><option value="3">سریع ×۳</option></select>
+   <select id="lv"><option value="0">مبتدی</option><option value="1" selected>پیشرفته</option><option value="2">حرفه‌ای</option></select>
+  </div>
+ </div>
+ <div class="pn"><h2>📊 مقادیر زنده</h2><div id="rd"></div></div>
+ <div class="pn"><h2>🧑‍🏫 معلم</h2><div id="tut">یک پارامتر را تغییر بده تا توضیح علمی تغییر را ببینی.</div>
+  <div class="bt"><button id="why" class="bt" style="border:1px solid var(--bd);background:var(--bg);color:var(--fg);border-radius:8px;padding:6px 12px;font:inherit">❓ چرا؟</button></div><div id="wl"></div></div>
+ <div class="pn a"><h2>📐 فرمول‌ها</h2><pre id="frm"></pre></div>
+ <div class="pn p"><h2>🔬 روش عددی و محدودیت مدل</h2><div id="num" class="note"></div></div>
+</div>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
